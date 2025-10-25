@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching</title>
+    <style>
+    :root {
+            --bg-color: #1e27d531;
+            --text-color: #070204;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color); /* Lighter and less brown tone, before f9cfc0 */
+            color: var(--text-color); /* Before 333 (just black) */
+            text-align: left;
+            padding: 35px;
+            position: relative;
+            transition: background-color 1.5s, color 1.5s;
+        }
+        .text {
+            flex: 1; /* Allows text to take available space */
+            min-width: 250px; /* Prevents text from becoming too narrow */
+        }
+        ul {
+            padding-left: 30px; /* Reduce indentation */
+        }
+        li {
+            margin-bottom: 12px; /* Adds space between list items */
+        }
+        h1 {
+            margin-left: 0px; /* margin for name */
+            margin-bottom: 25px;
+        }
+        .content {
+            max-width: 700px;
+            margin-left: 20px;
+        }
+        a {
+            color: #ac0c4f;          /*before 0077cc, also 5D3FD3, and then 924b53 (too pale)*/
+            text-decoration: none;
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 22px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .clickable-word {
+            cursor: pointer;
+            /* text-decoration: underline;
+            color: blue; */
+  }
+        .container {
+            display: flex;
+            flex-wrap: wrap;  /* Allows the image to move down if needed */
+            align-items: center; /* Aligns text and image */
+            margin: 0 auto; /* Centers the whole container */
+        }
+        @media (max-width: 600px) {
+            .container {
+            flex-direction: column; /* Stacks text & image vertically */
+            align-items: left; /* aligns everything left */
+            text-align: left; /* aligns text left as well */
+            width: 100%; /* Ensures it spans full screen */
+            padding: 0 0%; /* Adds padding on small screens, bad idea here to put 5% instead of 0% because shifts everything to the right */
+            margin-left: 0; /* Remove default left margin */
+            margin-right: 10%; /* Small right margin to balance the layout */
+        }
+        .text {
+            width: 100%; /* Makes text take full width */
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <nav style="display: flex; justify-content: space-between;">
+        <div>
+            <a href="index.html">Anton Engelmann</a>
+        </div>
+        <div>
+            <a href="teaching.html">Teaching</a>
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Teaching</h1>
+        <section id="current teaching">
+            <h2>Current Teaching (Winter 2025/26)</h2>
+                <p>This term, I am the teaching assistant for Zahlentheorie. Here is the <a href=""https://jogustine.uni-mainz.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=COURSEDETAILS&ARGUMENTS=-N000000000000001,-N001294,-N0,-N393103633992759,-N393103633986760,-N0,-N0,-N0> JOGU-StINe</a> site.</p>
+        </section>
+
+        <section id="past teaching">
+            <h2>Past Teaching</h2>
+                <ul>
+                    <li>Computeralgebra, Teaching Assistant, Summer 2025, Mainz</li>
+                    <li>Mathematics for computer scientists 2a, Teaching Assistant, Summer 2024, Mainz</li>
+                    <li>Algebraic Topology I, Tutor, Winter 2023/24, Bonn</li>
+                    <li>Linear Algebra for teachers and computer scientists, Tutor, Summer 2023, Bonn</li>
+                    <li>Algebra II, Tutor, Winter 2022/23, Bonn</li>
+                    <li>Geomtery and Topology, Tutor, Summer 2022, Bonn</li>
+                    <li>HelpDeks Algorithmic Mathematics I, Tutor, Winter 2021/22, Bonn</li>
+                    <li>HelpDeks Algorithmic Mathematics II, Tutor, Summer 2021, Bonn</li>
+                    <li>Mathematics for physicits I, Tutor, Winter 2020/21, Bonn</li>
+                    <li>Preliminary course mathematics for secondary subjects, Tutor, September 2021/22/23, Bonn</li>
+                </ul>#f6e2f3c7
+        </section>
+
+        <section>
+            <h3>Impressum</h2>
+            Angaben gem. § 5 TMG:<br/>
+            Anton Engelmann<br/>
+            Institut für Mathematik<br/>
+            Johannes Gutenberg-Universität<br/>
+            Staudingerweg 9<br/>
+            55128 Mainz
+        </section>
+  </main>
+
+  <footer>
+    <p style="margin-top:40px; font-size:0.9em; color:#666">© 2025 Anton Engelmann</p>
+  </footer>
+</body>
+</html>

@@ -1,28 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anton Engelmann – PhD Student in Homotopy Theory</title>
+  <style>
+    :root {
+            --bg-color: #1e27d531;
+            --text-color: #070204;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color); /* Lighter and less brown tone, before f9cfc0 */
+            color: var(--text-color); /* Before 333 (just black) */
+            text-align: left;
+            padding: 35px;
+            position: relative;
+            transition: background-color 1.5s, color 1.5s;
+        }
+        .text {
+            flex: 1; /* Allows text to take available space */
+            min-width: 250px; /* Prevents text from becoming too narrow */
+        }
+        ul {
+            padding-left: 30px; /* Reduce indentation */
+        }
+        li {
+            margin-bottom: 12px; /* Adds space between list items */
+        }
+        h1 {
+            margin-left: 0px; /* margin for name */
+            margin-bottom: 25px;
+        }
+        .content {
+            max-width: 700px;
+            margin-left: 20px;
+        }
+        img {
+            max-width: 350px;
+            height: auto;
+            margin: 21px 0; /* Adds space above/below image */
+            margin-left: 20px; /* Creates space between text and image */
+            flex-shrink: 0; /* Prevents the image from shrinking too much */
+            align-self: flex-start; /* Moves the image up */
+        }
+        a {
+            color: #ac0c4f;          /*before 0077cc, also 5D3FD3, and then 924b53 (too pale)*/
+            text-decoration: none;
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 22px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .clickable-word {
+            cursor: pointer;
+            /* text-decoration: underline;
+            color: blue; */
+  }
+        .container {
+            display: flex;
+            flex-wrap: wrap;  /* Allows the image to move down if needed */
+            align-items: center; /* Aligns text and image */
+            margin: 0 auto; /* Centers the whole container */
+        }
+        @media (max-width: 600px) {
+            .container {
+            flex-direction: column; /* Stacks text & image vertically */
+            align-items: left; /* aligns everything left */
+            text-align: left; /* aligns text left as well */
+            width: 100%; /* Ensures it spans full screen */
+            padding: 0 0%; /* Adds padding on small screens, bad idea here to put 5% instead of 0% because shifts everything to the right */
+            margin-left: 0; /* Remove default left margin */
+            margin-right: 10%; /* Small right margin to balance the layout */
+        }
+        .text {
+            width: 100%; /* Makes text take full width */
+        }
+        img {
+            align-self: left; /* Lefts image */
+            margin: 25px 0; /* Adds space above/below image */
+            max-width: 230px; /* Makes the image smaller on small screens */
+        }
+  </style>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB0QTXQBF3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-HB0QTXQBF3');
-  </script>
-
-  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 
-  <title>Anton Engelmann</title>
+</head>
+<body>
+  <header>
+    <nav style="display: flex; justify-content: space-between;">
+        <div>
+            <a href="index.html">Anton Engelmann</a>
+        </div>
+        <div>
+            <a href="teaching.html">Teaching</a>
+        </div>
+    </nav>
+  </header>
 
-  <!-- Meta Description -->
-  <meta name="description" content="Official website of Anton Engelmann, a PhD student at JGU Mainz.">
+  <div class="container">
+    <div class="text">
+    <h1>Anton Engelmann</h1>
+    <p>I am a second-year PhD-student at Johannes Gutenberg-Universität Mainz under the supervision of <a href="http://tom-bachmann.com">Tom Bachmann</a>. Previously, I was a master student of <a href="https://sites.google.com/view/jackmdavies/home">Jack Davies</a> in Bonn.</p> 
+    <p>You can reach me under anton.engelmann[at]uni-mainz.de or come by to Staudingerweg 9, office 04-419.</p>
+    <section id="research interests">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Unstable and stable motivic homotopy theory</li>
+            <li>Equivariant homotopy theory</li>
+            <li>Elliptic cohomology</li>
+            <li>Higher categories</li>
+        </ul>
+    </section>
 
-  <p> Currently under construction </p>
+    <section id="preprints">
+        <h2>Preprints</h2>
+            <p><b>Stable Adams operations on \(RO(C_2)\)-graded homotopy groups</b> (<a href="AdamsOperationsKRTMF_Oct2025.pdf">pdf</a>)</p>
+    </section>
+
+    <section id="talks">
+        <h2>Talks</h2>
+        <table>
+            <tr>
+                <td>07/2025</td>
+                <td><i>Normed coalgebras in rational homotopy theory</i></td>
+                <td><a href="https://trr358.math.uni-bielefeld.de/recurringevents/view/96"> Universität Bielefeld</a></td>
+            </tr>   
+        </table>
+        <p></p>
+    </section>
+
+    <section id="organisation">
+        <h2>Organisation</h2>
+             <p><a href="https://sites.google.com/view/motivesandhighercategories/workshop-motives-higher-categories">GAUS Workshop on Motives and Higher Categories</a> in Mainz, with <a href="http://tom-bachmann.com">Tom Bachmann</a>, <a href="https://juliebannwart.com">Julie Bannwart</a> and <a href="https://klaus-mattis.com" >Klaus Mattis</a>.</p>
+             <p><a href="https://crc326gaus.de/wp-content/uploads/2024/12/GAUS-Junior-AG-2025-01-20-spherical-2024-12-16.pdf">GAUS Junior AG on Maps between spherical group rings</a> in Mainz, with <a href="https://klaus-mattis.com" >Klaus Mattis</a>.</p>
+    </section>
+    </div>
+    <img src="Bild.jpeg" alt="Wer">
+</div>
+
+  <footer>
+    <p style="margin-top:40px; font-size:0.9em; color:#666">© 2025 Anton Engelmann</p>
+  </footer>
 </body>
 </html>
